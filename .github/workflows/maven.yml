@@ -1,0 +1,10 @@
+name: maven
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  check-maven:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: TheTripleV/build-actions/check-for-maven-update@maven_scanner
